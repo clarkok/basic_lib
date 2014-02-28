@@ -1,5 +1,9 @@
 /**
  * Module String
+ * @author Clarkok
+ *
+ * The Lib defines the type of String which is same with C++ string.
+ * All method of C++ string is rewritten here.
  */
 
 #ifndef _STRING_H_
@@ -33,10 +37,10 @@ void _string ( String *s );
 // Capacity
 String *string_reserve ( String *s, u32 n );
 String *string_clear ( String *s );
-#define string_empty ( s )  ( !((s)->length) )
+#define string_empty( s )  ( !((s)->length) )
 
 // Element Access
-#define string_at ( s, pos ) ( (s)->_data[pos] )
+#define string_at( s, pos ) ( (s)->_data[pos] )
 
 // Modifier
 String *string_append_string ( String *s, const String *a );
